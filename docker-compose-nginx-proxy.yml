@@ -1,0 +1,26 @@
+version: '3.6'
+# Use this docker-compose file with nginx-proxy.
+services:
+  db2:
+    container_name: db2
+    build:
+      context: ./
+    volumes:
+      - ./src:/var/www/html
+    expose:
+      - 80
+    environment:
+      - DB2_HOST=${DB2_HOST}
+      - DB2_PORT=${DB2_PORT}
+      - DB2_DB=${DB2_DB}
+      - DB2_SCHEMA=${DB2_SCHEMA}
+      - DB2_PROTOCOL=${DB2_PROTOCOL}
+      - DB2_USER=${DB2_USER}
+      - DB2_PASSWORD=${DB2_PASSWORD}
+      - VIRTUAL_PORT=80
+      - VIRTUAL_HOST=db2.local
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
