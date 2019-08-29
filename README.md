@@ -53,3 +53,7 @@ You can pass URL encoded SQL queries as get parameter like this:
 ```
 http://db2.local/?query=SELECT%20current%20date%20FROM%20sysibm.sysdummy1;
 ```
+
+## Development notes
+
+I tried to build an Alpine based image, but then PHP would always segfault.
