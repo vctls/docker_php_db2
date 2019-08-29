@@ -1,4 +1,4 @@
-# Docker PHP, Apache and PDO_Db2
+# Docker PHP, Apache and IBM_DB2
 Inspired by https://github.com/keboola/db-extractor-db2
 
 Base configuration files to generate a Docker container with PHP, Apache and IBM_DB2 support. 

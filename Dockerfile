@@ -1,4 +1,4 @@
-FROM php:7.2.2-apache-stretch AS php_apache_pdo_db2
+FROM php:7.2.2-apache-stretch AS php_apache_db2
 
 ENV IBM_DB_HOME /opt/ibm/dsdriver
 ENV LD_LIBRARY_PATH $IBM_DB_HOME/lib
