@@ -33,7 +33,7 @@ https://mega.nz/#!UMwFkY5K!tPB4sWpLvLaMlrYT8zDt97seSenkEj0aPVE12stsdsI
 4. Build the image:  
 `docker build -t phpdb2 .`
 
-5. When containers are to be created, note that you must set the Infomix server IP:  
+5. Run the container:  
 `docker run -d -p 80:80 -v /var/www/html:/var/www/html`.
 
 ### Or,
